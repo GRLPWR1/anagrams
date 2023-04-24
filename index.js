@@ -1,22 +1,14 @@
 //Напиши метод isAnagrams(), который принимает два строчных аргумента
 // и выводит true, если строки являются анаграммами, и false, если строки ими не являются.
 
-let str1 = 'castle';
-let str2 = 'banana';
-
 function isAnagrams(str1, str2){
     let arr1 = str1.split('');
     let arr2 = str2.split('');
-    console.log(str1.split(''));
-    console.log(str2.split(''));
     let sameCharacter = 0;
-
     for (let i = 0; i < arr1.length; i++){
         for (let j = 0; j < arr2.length; j++){
             if(arr1[i] === arr2[j]) {
                 sameCharacter += 1;
-
-                console.log(sameCharacter);
             }
         }
     }
@@ -26,8 +18,6 @@ function isAnagrams(str1, str2){
         return false;
     }
 }
-
-console.log(isAnagrams(str1, str2));
 
 module.exports = {
     isAnagrams
