@@ -4,7 +4,7 @@
 function isAnagrams(str1, str2){
     let str1Sorted = str1.split('').sort().join('');
     let str2Sorted = str2.split('').sort().join('');
-    if (str1Sorted === str2Sorted) {
+    if (str1Sorted.toLowerCase() === str2Sorted.toLowerCase()) {
         return true;
     } else {
         return false;
